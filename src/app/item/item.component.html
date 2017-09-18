@@ -1,0 +1,7 @@
+<li [ngStyle]="{ background: 'url(' + item.imgUrl + ') no-repeat', width: '100%'}" class="item">
+  {{ item.imgUrl }}
+  <div *ngIf="item.title" class="title"></div>
+  <div *ngIf="item.subTitle" class="sub-title"></div>
+  <div *ngIf="item.imgReffer" class="img-reffer"></div>
+  <div *ngIf="item.imgRefferLink" class="img-reffer-link"></div>
+</li>
