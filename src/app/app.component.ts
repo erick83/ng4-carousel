@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  data = [
+    {
+      imgUrl: 'assets/bg/a.jpg',
+      title: 'Imagen 1',
+      subTitle: 'Imagen de Prueba'
+    },
+    {
+    imgUrl: 'assets/1.jpg'
+    },
+  ];
 }

@@ -7,8 +7,8 @@ import { CarouselData } from '../interfaces/carousel-data';
 })
 export class ItemComponent implements OnInit {
 
-  @Input() item: CarouselData;
-  
+  @Input() img: string;
+
   constructor() { }
 
   ngOnInit() {

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CarouselData } from '../interfaces/carousel-data';
+
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
@@ -7,19 +7,12 @@ import { CarouselData } from '../interfaces/carousel-data';
 })
 export class CarouselComponent implements OnInit {
 
-  @Input() data: Array<CarouselData> = [
-    {
-    imgUrl: 'assets/1.jpg'
-    },
-    {
-    imgUrl: 'assets/1.jpg'
-    },    
-  ];
-  
-  @Input() prev_next: false;
-  @Input() indicator: false;
-  @Input() cant: 1;
-  
+  @Input() prev_next = false;
+  @Input() indicator = false;
+  @Input() elements = 1;
+  @Input() ng4cWidth = '100%';
+  @Input() ng4cHeight = '100%';
+
   constructor() { }
 
   ngOnInit() {

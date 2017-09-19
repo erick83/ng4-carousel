@@ -1,5 +1,8 @@
-<ul [ngStyle]="{width: '100%', height: '100%'}">
-  <app-item *ngFor="let item of data" [item]="item"></app-item>
+<ul class="carousel" [ngStyle]="{ width: ng4cWidth, height: ng4cHeight}">
+  <app-item *ngFor="let item of data" [img]="item.imgUrl">
+    <h2>TITULO</h2>
+    <p>Parrafo</p>
+  </app-item>
 </ul>
 <div *ngIf="prev_next">
   <button>Previus</button>
